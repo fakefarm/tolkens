@@ -13,6 +13,7 @@ gem 'puma', '~> 3.7'
 gem 'rack-cors'
 
 group :development, :test do
+  gem 'rspec-rails', '~> 3.6'
 end
 
 group :development do
