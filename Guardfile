@@ -68,3 +68,5 @@ guard :rspec, cmd: "bundle exec rspec" do
     Dir[File.join("**/#{m[1]}.feature")][0] || "spec/acceptance"
   end
 end
+
+notification :terminal_notifier, timeout: 2 if `uname` =~ /Darwin/

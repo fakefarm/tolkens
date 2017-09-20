@@ -14,6 +14,8 @@ gem 'rack-cors'
 
 gem 'guard'
 gem 'guard-rspec', require: false
+gem 'terminal-notifier-guard'
+gem 'terminal-notifier'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.6'
