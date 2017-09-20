@@ -12,6 +12,9 @@ gem 'puma', '~> 3.7'
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
 gem 'rack-cors'
 
+gem 'guard'
+gem 'guard-rspec', require: false
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.6'
   gem 'spring-commands-rspec'
@@ -20,7 +23,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5' 
+  gem 'shoulda-matchers', git: 'https://github.com/thoughtbot/shoulda-matchers.git', branch: 'rails-5'
 end
 
 group :development do
