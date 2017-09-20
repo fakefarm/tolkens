@@ -18,6 +18,8 @@ gem 'terminal-notifier-guard'
 gem 'terminal-notifier'
 
 group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-doc'
   gem 'rspec-rails', '~> 3.6'
   gem 'spring-commands-rspec'
   gem 'factory_girl_rails'
